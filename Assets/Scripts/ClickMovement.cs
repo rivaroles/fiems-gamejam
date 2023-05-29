@@ -1,6 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using System;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -46,7 +47,13 @@ public class ClickMovement : MonoBehaviour
     while (Vector3.Distance(transform.position, target) > 0.1f) {
         // Ignora colisão
         Vector3 destination = Vector3.MoveTowards(transform.position, target, playerSpeed * Time.deltaTime);
-        transform.position = destination;
+        // transform.position = destination;
+
+        // Character Controller
+        Vector3 direction = target - transform.position;
+        Vector3 movement = direction.normalized * playerSpeed * Time.deltaTime;
+        characterController.Move(movement);
+
         yield return null;
     }
    }
