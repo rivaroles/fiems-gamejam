@@ -37,8 +37,8 @@ public class AreaDetector : MonoBehaviour
         while (timerAtivo)
         {
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(1);
-        Progress.current += 1;
+        yield return new WaitForSeconds(3);
+        Progress.current += 5;
 
         }
 

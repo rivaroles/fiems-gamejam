@@ -270,7 +270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26424
+  m_Name: pb_Mesh58546
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 160010535}
   - component: {fileID: 160010537}
   - component: {fileID: 160010536}
+  - component: {fileID: 160010538}
   m_Layer: 0
   m_Name: Area TV
   m_TagString: Untagged
@@ -489,6 +490,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.082388, y: 8.665075, z: 15.386621}
   m_Center: {x: -2.4243116, y: 0, z: 0}
+--- !u!114 &160010538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160010534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08076844e151f0743bcc7ff9c6e53117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 1964748421}
 --- !u!1 &204282355
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,19 +798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a97e1e038e3fe479bcb9a6805d52a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &446925734
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446925729}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.009999999
-  m_Center: {x: -0.0000000032596283, y: 0.0000000032596286, z: -0.000000014901161}
 --- !u!4 &497504959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4695386937fca1d4bbbf3dfccf3bf71a, type: 3}
@@ -1020,6 +1021,7 @@ GameObject:
   - component: {fileID: 790715108}
   - component: {fileID: 790715110}
   - component: {fileID: 790715109}
+  - component: {fileID: 790715111}
   m_Layer: 0
   m_Name: Area Sofa
   m_TagString: Untagged
@@ -1070,6 +1072,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.0978293, y: 3.945169, z: 9.5771}
   m_Center: {x: -0.3537896, y: 0.2870171, z: -0.000000023804331}
+--- !u!114 &790715111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790715107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08076844e151f0743bcc7ff9c6e53117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 1964748421}
 --- !u!114 &849617963 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8673776235429201662, guid: dd57090a8d28ede468577f67f352a38a, type: 3}
@@ -1216,6 +1231,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856232910}
   m_CullTransparentMesh: 1
+--- !u!1 &909013922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909013923}
+  - component: {fileID: 909013926}
+  - component: {fileID: 909013925}
+  - component: {fileID: 909013924}
+  m_Layer: 0
+  m_Name: Area Yoga
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909013923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909013922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.081360355, y: 0.007036543, z: -0.00013512469}
+  m_LocalScale: {x: 0.010000003, y: 0.0100000035, z: 0.0017797182}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1621477562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909013924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909013922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08076844e151f0743bcc7ff9c6e53117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 1964748421}
+--- !u!114 &909013925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909013922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff81926ec816ec34c8f1247585d07d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Progress: {fileID: 1030488925}
+  PlayerAnimator: {fileID: 1198630558}
+  Area: {fileID: 909013926}
+--- !u!65 &909013926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909013922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.756933, y: 2.0913582, z: 9.459823}
+  m_Center: {x: 1.9078856, y: 0.5456791, z: 0}
 --- !u!1 &951686432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a97e1e038e3fe479bcb9a6805d52a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1621477562 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4425684263661815323, guid: 4695386937fca1d4bbbf3dfccf3bf71a, type: 3}
+  m_PrefabInstance: {fileID: 1358428585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666728133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7793574018657895539, guid: 4695386937fca1d4bbbf3dfccf3bf71a, type: 3}
@@ -2329,6 +2424,7 @@ GameObject:
   - component: {fileID: 1905502554}
   - component: {fileID: 1905502553}
   - component: {fileID: 1905502555}
+  - component: {fileID: 1905502556}
   m_Layer: 0
   m_Name: Area Fridge
   m_TagString: Untagged
@@ -2380,6 +2476,19 @@ BoxCollider:
   m_Size: {x: 7.2063193, y: 13.985723, z: 7.1453285}
   m_Center: {x: 0, y: -0.045438766, z: 3.0726643}
 --- !u!114 &1905502555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905502551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08076844e151f0743bcc7ff9c6e53117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 1964748421}
+--- !u!114 &1905502556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
