@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AreaDetector : MonoBehaviour
 {
-    [SerializeField] ProgressBar Fitness;
+    [SerializeField] ProgressBar Progress;
     [SerializeField] Animator PlayerAnimator;
+    [SerializeField] Collider Area;
     private bool timerAtivo = false;
 
     private void OnTriggerEnter(Collider collision) {
@@ -13,10 +14,10 @@ public class AreaDetector : MonoBehaviour
         {
             if (timerAtivo)
             return;
-            PlayerAnimator.Play("Interacting");
+            PlayerAnimator.SetBool("isIdle", false);
             timerAtivo = true;
-            Debug.Log("Player entrou na área da bola.");
-            StartCoroutine(timerBola());
+            Debug.Log("Player entrou na área.");
+            StartCoroutine(timerProgresso());
         }
     }
 
@@ -24,20 +25,21 @@ public class AreaDetector : MonoBehaviour
     {
          if (collision.tag == "Player")
         {
-            PlayerAnimator.Play("Idle");
+            PlayerAnimator.SetBool("isIdle", true);
             timerAtivo = false;
-            Debug.Log("Player deixou a área da bola.");
-            StopCoroutine(timerBola());
+            Debug.Log("Player deixou a área.");
+            StopCoroutine(timerProgresso());
         }
     }
 
-    IEnumerator timerBola()
+    IEnumerator timerProgresso()
     {
         while (timerAtivo)
         {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(1);
-        Fitness.current += 1;
+        Progress.current += 1;
+
         }
 
     }
