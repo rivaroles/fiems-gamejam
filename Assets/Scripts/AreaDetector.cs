@@ -5,7 +5,6 @@ using UnityEngine;
 public class AreaDetector : MonoBehaviour
 {
     [SerializeField] ProgressBar Progress;
-    [SerializeField] Animator PlayerAnimator;
     [SerializeField] Collider Area;
     private bool timerAtivo = false;
 
@@ -14,7 +13,6 @@ public class AreaDetector : MonoBehaviour
         {
             if (timerAtivo)
             return;
-            PlayerAnimator.SetBool("isIdle", false);
             timerAtivo = true;
             Debug.Log("Player entrou na área.");
             StartCoroutine(timerProgresso());
@@ -25,7 +23,6 @@ public class AreaDetector : MonoBehaviour
     {
          if (collision.tag == "Player")
         {
-            PlayerAnimator.SetBool("isIdle", true);
             timerAtivo = false;
             Debug.Log("Player deixou a área.");
             StopCoroutine(timerProgresso());
